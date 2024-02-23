@@ -1,21 +1,19 @@
-import React, { Component } from "react";
-import Header from "./header";
+import React from "react";
+import Header from "./Header";
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <button>Add</button>
       <div>
-        <Header/>
-        <button>Add</button>
-        <div>
-          <span>Name</span>
-          <input type="text" placeholder="Your name" />
-          <br />
-          <span>Phone number</span>
-        </div>
+        <span>Name</span>
+        <input type="text" placeholder="Your name" />
+        <br />
+        <span>Phone number</span>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
