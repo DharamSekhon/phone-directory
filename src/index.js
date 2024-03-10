@@ -1,11 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-// import AddSusbscriber from './AddSubscriber';
-import './common/common.css';
-import AddSusbscriber from './AddSubcscriber';
 
-ReactDOM.render(<AddSusbscriber />, document.getElementById('root'));
+import './common/common.css';
+import PhoneDirectory from './PhoneDirectory';
+
+ReactDOM.render(<PhoneDirectory />, document.getElementById('root'));
 registerServiceWorker();
