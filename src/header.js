@@ -1,19 +1,12 @@
-import React from "react";
+import React from 'react';
+import './Header.css';
 
-const Header = () => {
-  return (
-    <div
-      style={{
-        textAlign: "center",
-        padding: 20,
-        color: "#fff",
-        background: "#000",
-        textTransform: "uppercase",
-      }}
-    >
-      Phone Directory
-    </div>
-  );
-};
+const Header = function (props) {
+    return (
+        <div className="header">
+            {props.heading}
+        </div>
+    )
+}
 
 export default Header;
